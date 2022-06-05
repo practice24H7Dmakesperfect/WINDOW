@@ -1,0 +1,86 @@
+.footer {
+    width: 1024px;
+    margin-top: 60px;
+    .footerBar {
+		height: 116px;
+		background-color: #3F5D45;
+        display: flex;
+		justify-content: space-around;
+        .footerBarLogo {
+            display: flex;
+			align-items: center;
+            img {
+                width: 40px;
+            }
+            h2 {
+                font-size: 24px;
+                color: #EAF0ED;
+				margin-left: 24px;
+            }
+        }
+        .footerEmail {
+			display: flex;
+			align-items: center;
+			position: relative;
+			width: 316px;
+			img {
+				display: block;
+                width: 24px;
+				position: absolute;
+				margin-left: 20px;
+			}
+			input {
+				font-size: 20px;
+				padding: 10px 10px 10px 54px;
+			}
+            a img {
+					position: absolute;
+					padding: 16px 16px;
+					background-color: #FFE180;
+					width: 16px;
+					left: 250px;
+					bottom: 34px;
+			}    
+        }
+    }
+	.main {
+		padding-top: 30px;
+		display: flex;
+		justify-content: space-around;
+		background-color: #EAF0ED;
+		.information {
+			display: flex;
+			flex-direction: column;
+			img {
+				width: 172px;
+				margin-bottom: 115px;
+			}
+			li {
+				color: #3F5D45;
+				line-height: 1.5;
+			}
+		}
+		h2 {
+			font-size: 24px;
+			color: #3F5D45;
+			writing-mode: vertical-rl;
+			line-height: 1.5;
+			letter-spacing: 0.1em;
+		}
+	}
+	.bottom {
+		display: flex;
+		justify-content: space-around;
+		align-items: baseline;
+		padding: 30px 0px;
+		background-color: #EAF0ED;
+		a {
+			display: inline-block;
+			width: 32px;
+		}
+		.copyright p {
+			color: #3F5D45;
+			font-family: Times;
+		}
+	}
+}
