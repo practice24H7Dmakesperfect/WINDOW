@@ -1,33 +1,30 @@
 .header {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin: 30px;
-    width: 940px;
+    padding: 30px 0px 30px 30px;
     a img {
         width: 210px;
         height: 40px;
     }
     .link {
         display: flex;
-        flex-direction: row;
         align-items: center;
-            a {
-        font-size: 16px;
-        color: #3F5D45;
-        text-decoration: none;
-        margin-left: 30px;
-        margin-right: 30px;
+        a {
+            font-size: 16px;
+            color: #3F5D45;
+            padding: 0px 30px;
+            &:hover {
+                border-bottom: 3px solid darkolivegreen;
+            }
         }
-            img {
+        img {
             width: 24px;
             height: 24px;
         }
     }
 }
-.content{
+.content {
     display: flex;
-    flex-direction: row;
     margin-top: 60px;
     width: 100%;
     .selection {
@@ -36,70 +33,68 @@
         text-align: center;
         font-size: 24px;
         h2 {
-        color: white;
-        background-color: #3F5D45;
-        padding: 16px 64px;
+            color: white;
+            background-color: #3F5D45;
+            padding: 16px 64px;
         }
         a {
-        display: block;
-        text-decoration: none;
-        color: #3F5D45;
-        background-color: white;
-        border: 1px solid #EAF0ED;
-        padding: 16px 64px;
+            display: block;
+            color: #3F5D45;
+            background-color: white;
+            border: 1px solid #EAF0ED;
+            padding: 16px 64px;
             &:hover {
-            background-color: #EAF0ED;
-                }
+                background-color: #EAF0ED;
+            }
         }
     }
-    .product{
-        .productList{
+    .product {
+        .productList {
             display: flex;
-            flex-direction: row;
             flex-wrap: wrap;
             width: 640px;
-            .productListCard{
+            .productListCard {
+                position: relative;
                 width: 300px;
                 margin: 0px 0px 20px 20px;
-                position: relative;
             }
-            .tag{
+            .tag {
                 position: absolute;
+                top: 0px;
+                left: 20px;
                 color: #EAF0ED;
                 background-color: #3F5D45;
                 padding: 15px 10px;
                 writing-mode: vertical-lr;
-                letter-spacing: 3px;
-                top: 0px;
-                left: 20px;
+                letter-spacing: 3px;    
             }
-            .label img{
+            .label img {
                 position: absolute;
                 top: 19px;
                 left: 258px;
             }
-         
-            .productListCardBody{
+            .productListCardBody {
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-between;
                 flex-wrap: wrap;
-                h3{
-                    font-size: 20px;
-                    color: #3F5D45;
-                    border: 1px solid #EAF0ED;
-                    padding: 14px 40px;
-
-                }
-                span{
-                    font-size: 20px;
-                    color: #3F5D45;
-                    border: 1px solid #EAF0ED;
-                    padding: 14px 20px 14px 30px;
-
-                }
-                a{
+                h3 {
+                    width: 171px;
                     text-align: center;
-                    text-decoration: none;
+                    font-size: 20px;
+                    color: #3F5D45;
+                    border: 1px solid #EAF0ED;
+                    padding: 14px 0px;
+                }
+                p {
+                    width: 125px;
+                    text-align: center;
+                    font-size: 20px;
+                    color: #3F5D45;
+                    border: 1px solid #EAF0ED;
+                    padding: 14px 0px;
+                }
+                a {
+                    text-align: center;
                     font-size: 24px;
                     padding: 16px 90px;
                     color: #3F5D45;
@@ -120,7 +115,6 @@
                 display: block;
                 color: #3F5D45;
                 font-size: 20px;
-                text-decoration: none;
                 text-align: center;
                 line-height: 60px;
             }
